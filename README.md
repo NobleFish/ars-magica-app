@@ -2,7 +2,7 @@
 
 This is a web application for managing characters, covenants, sagas, and notes for the Ars Magica 5e role-playing game.
 
-## Features
+## Planned Features
 
 - Character generation and management
 - Covenant creation and management
@@ -13,7 +13,6 @@ This is a web application for managing characters, covenants, sagas, and notes f
 
 - React
 - Next.js
-- Material-UI
 - Node.js
 - MongoDB
 
@@ -31,9 +30,9 @@ This is a web application for managing characters, covenants, sagas, and notes f
 
 3. Set up environment variables:
    
-   Create a `.env` file in the root directory and add your MongoDB connection string:
+   Modify the `.next.config.js` file in the root directory and add your MongoDB connection string:
 
-`MONGODB_URI=mongodb://localhost:27017/ars_magica`
+`MONGODB_URI: 'mongodb://0.0.0.0/arsmagica',`
 
 
 4. Start the development server:
