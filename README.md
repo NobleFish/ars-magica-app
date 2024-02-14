@@ -46,3 +46,10 @@ This is a web application for managing characters, covenants, sagas, and notes f
 
 License:
 This project is licensed under the GNU General Public License v3.0.
+
+Disclaimer: 
+<a href='https://www.atlas-games.com/arsmagica'>Ars Magica</a> is a trademark of Atlas Games. All rights reserved. Learn more about the game at <a href='https://www.atlas-games.com/arsmagica'>atlas-games.com/arsmagica</a>.
+
+This is a fan application for the roleplaying game Ars Magica. It is not affiliated with Atlas Games. 
+
+Ars Magica, Mythic Europe, and Covenants are trademarks of Trident, Inc. Order of Hermes, Tremere, and Doissetep are trademarks of White Wolf, Inc. Other trademarks are the property of their respective holders. Use of these trademarks on Project:Redcap is for non-commercial hobby/fan purposes and is without written permission. Use of these or any trademarks here shall not be construed as a challenge to their ownership or their owners' rights
