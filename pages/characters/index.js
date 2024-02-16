@@ -55,11 +55,10 @@ const Characters = () => {
   return (
     <div>
     <button onClick={createCharacter}>Create Character</button>
-    {isLoading ? (
-      <p>Loading...</p> // Render loading message if isLoading is true
-    ) : (
-      <CharacterList characters={characters} deleteCharacter={deleteCharacter}/>
-    )}
+
+    {isLoading && <p>Loading...</p>}
+    {!isLoading && !characters && <p>Characters not found</p>}
+    {!isLoading && characters && <CharacterList characters={characters} deleteCharacter={deleteCharacter}/>}
     
   </div>
   );
