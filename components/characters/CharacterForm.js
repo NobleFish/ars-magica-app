@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+// components/characters/CharacterForm.js
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 const CharacterForm = ({ character: initialCharacter}) => {

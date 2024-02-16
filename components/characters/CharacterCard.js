@@ -1,3 +1,4 @@
+// components/characters/CharacterCard.js
 const CharacterCard = ({character, deleteCharacter}) => {
   
   // Function to edit a character

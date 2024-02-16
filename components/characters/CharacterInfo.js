@@ -1,3 +1,4 @@
+// components/characters/CharacterInfo.js
 const CharacterInfo = ({character}) => {
   
     // Function to edit a character
