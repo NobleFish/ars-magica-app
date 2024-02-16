@@ -11,6 +11,7 @@ const handler = async (req, res) => {
   switch (method) {
     case 'GET':
       try {
+        // Return just the character_type and character_name fields for all characters
         const characters = await Character.find({}).select('character_type character_name');
         res.status(200).json({ success: true, data: characters });
         console.log("Returning characters");

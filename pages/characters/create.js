@@ -1,3 +1,4 @@
+// pages/characters/create.js
 import CharacterForm from '../../components/characters/CharacterForm';
 
 export default function CharactersCreate() {
