@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import CovenantList from '../../components/covenants/CovenantList';
+import Button from '../../components/layout/Button';
 
 const Covenants = () => {
   const [covenants, setCovenants] = useState([]);
@@ -49,9 +50,9 @@ const Covenants = () => {
   };
 
   return (
-    <div>
-      <button onClick={createCovenant}>Create Covenant</button>
-
+    <div className="text-center">
+      <h1 className="text-4xl">Covenants</h1>
+      <Button onClick={createCovenant}>Create Covenant</Button>
       {isLoading && <p>Loading...</p>}
       {!isLoading && !covenants && <p>Covenants not found</p>}
       {!isLoading && covenants && <CovenantList covenants={covenants} deleteCovenant={deleteCovenant} />}

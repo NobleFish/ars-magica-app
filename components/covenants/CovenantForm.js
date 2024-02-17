@@ -1,6 +1,7 @@
 // components/covenants/CovenantForm.js
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Button from '../layout/Button';
 
 const CovenantForm = ({ covenant: initialCovenant }) => {
   const router = useRouter();
@@ -48,7 +49,7 @@ const CovenantForm = ({ covenant: initialCovenant }) => {
         Covenant Name:
         <input type="text" value={covenant_name} onChange={(e) => setCovenantName(e.target.value)} />
       </label>
-      <button type="submit">{initialCovenant ? 'Update' : 'Create'} Covenant</button>
+      <Button type="submit">{initialCovenant ? 'Update' : 'Create'} Covenant</Button>
     </form>
   );
 };

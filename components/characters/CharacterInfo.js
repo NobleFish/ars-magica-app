@@ -1,3 +1,4 @@
+import Button from "../layout/Button";
 // components/characters/CharacterInfo.js
 const CharacterInfo = ({character}) => {
   
@@ -35,8 +36,8 @@ const CharacterInfo = ({character}) => {
         <p>Type: {character.character_type}</p>
         <p>Player: {character.player_name}</p>
         <p>Saga: {character.saga}</p>
-        <button onClick={() => editCharacter(character._id)}>Edit</button>
-        <button onClick={() => confirmDelete(character._id)}>Delete</button>
+        <Button onClick={() => editCharacter(character._id)}>Edit</Button>
+        <Button onClick={() => confirmDelete(character._id)}>Delete</Button>
       </div>
     );
   };

@@ -3,10 +3,11 @@ import CovenantCard from './CovenantCard';
 const CovenantList = ({ covenants, deleteCovenant }) => {
   return (
     <div>
-      <h1>Covenants</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 m-1">
       {covenants.map(covenant => (
         <CovenantCard covenant={covenant} deleteCovenant={deleteCovenant} key={covenant._id} />
       ))}
+      </div>
     </div>
   );
 };

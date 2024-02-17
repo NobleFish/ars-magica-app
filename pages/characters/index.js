@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import CharacterList from '../../components/characters/CharacterList';
+import Button from '../../components/layout/Button';
 
 const Characters = () => {
   const [characters, setCharacters] = useState([]);
@@ -53,9 +54,9 @@ const Characters = () => {
 
 
   return (
-    <div>
-    <button onClick={createCharacter}>Create Character</button>
-
+    <div className="text-center">
+    <h1 className="text-4xl">Characters</h1>  
+    <Button onClick={createCharacter}>Create Character</Button>
     {isLoading && <p>Loading...</p>}
     {!isLoading && !characters && <p>Characters not found</p>}
     {!isLoading && characters && <CharacterList characters={characters} deleteCharacter={deleteCharacter}/>}

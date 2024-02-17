@@ -1,6 +1,7 @@
 // components/characters/CharacterForm.js
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Button from '../layout/Button';
 
 const CharacterForm = ({ character: initialCharacter}) => {
 
@@ -75,7 +76,7 @@ const CharacterForm = ({ character: initialCharacter}) => {
         Saga:
         <input type="text" value={saga} onChange={(e) => setSaga(e.target.value)} />
       </label>
-      <button type="submit">{initialCharacter ? 'Update' : 'Create'} Character</button>
+      <Button type="submit">{initialCharacter ? 'Update' : 'Create'} Character</Button>
     </form>
   );
 };

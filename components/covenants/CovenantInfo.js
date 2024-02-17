@@ -1,4 +1,5 @@
 // components/covenants/CovenantInfo.js
+import Button from '../layout/Button';
 
 const CovenantInfo = ({covenant}) => {
   // Function to edit a covenant
@@ -32,8 +33,8 @@ const CovenantInfo = ({covenant}) => {
   return (
     <div key={`${covenant._id}`}>
       <h2>{covenant.covenant_name}</h2>
-      <button onClick={() => editCovenant(covenant._id)}>Edit</button>
-      <button onClick={() => confirmDelete(covenant._id)}>Delete</button>
+      <Button onClick={() => editCovenant(covenant._id)}>Edit</Button>
+      <Button onClick={() => confirmDelete(covenant._id)}>Delete</Button>
     </div>
   );
 };
