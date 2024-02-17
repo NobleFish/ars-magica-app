@@ -1,18 +1,11 @@
-import React from 'react';
-import Navbar from '../components/layout/Navbar';
-import Footer from '../components/layout/Footer';
+import '../styles/globals.css';
+import { AppLayout } from '../components/layout/Layout';
 
-function MyApp({ Component, pageProps }) {
+function ArsMagicaApp({ Component, pageProps }) {
   return (
-    // Todo: Wrap the entire app in a ThemeProvider component and CSSBaseline component from Material-UI.
-    //<ThemeProvider theme={theme}>
-    <div>
-      <Navbar />
+    <AppLayout>
       <Component {...pageProps} />
-      <Footer />
-    </div>
-    //</ThemeProvider>
+    </AppLayout>
   );
 }
-
-export default MyApp;
+export default ArsMagicaApp;

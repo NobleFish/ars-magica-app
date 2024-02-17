@@ -1,11 +1,13 @@
-// components/Footer.js
-
-import React from 'react';
+// coponents/layout/Footer.js
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <a href='https://www.atlas-games.com/arsmagica'>Ars Magica</a> is a trademark of Atlas Games. All rights reserved. Learn more about the game at <a href='https://www.atlas-games.com/arsmagica'>atlas-games.com/arsmagica</a>.
+    <footer className="flex justify-between bg-gray-800 p-4 sticky bottom-0 w-full text-white">
+      <div>
+        Ars Magica is a trademark of <a href='https://www.atlas-games.com/' className="py-2 text-blue-400 hover:bg-gray-600">Atlas Games</a>. All rights reserved.
+
+        Learn more about the game at <a href='https://www.atlas-games.com/arsmagica' className="py-2 text-blue-400 hover:bg-gray-600">atlas-games.com/arsmagica</a>.
+      </div>
     </footer>
   );
 };

@@ -1,21 +1,16 @@
-import Link from 'next/link'; // Import Link from 'next/link'
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
-    return (
-        <nav>
-            <ul>
-                <li>
-                    <Link href="/">Home</Link>
-                </li>
-                <li>
-                    <Link href="/characters">Characters</Link>
-                </li>
-                <li>
-                    <Link href="/covenants">Covenants</Link> 
-                </li>
-            </ul>
-        </nav>
-    );
+  const router = useRouter();
+  
+  return (
+    <div className="flex justify-between bg-gray-800 p-4 sticky top-0 w-full">
+      <Link href="/" className={`text-white px-4 py-2 hover:bg-gray-600 ${router.pathname === "/" ? "bg-gray-600" : ""}`}>Home</Link>
+      <Link href="/characters" className={`text-white px-4 py-2 hover:bg-gray-600 ${router.pathname === "/characters" ? "bg-gray-600" : ""}`}>Characters</Link>
+      <Link href="/covenants" className={`text-white px-4 py-2 hover:bg-gray-600 ${router.pathname === "/covenants" ? "bg-gray-600" : ""}`}>Covenants</Link>
+    </div>
+  );
 };
 
 export default Navbar;

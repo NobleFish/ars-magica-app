@@ -1,11 +1,6 @@
-const Home = () => {
+const HomePage = () => {
   return (
-    <div>
-      <div style={{ padding: '20px' }}>
-        <h1> Ars Magica 5th Edition Helper</h1>
-      </div>
-    </div>
-  );
+      <h1 className="text-center">Ars Magica 5th Edition Helper</h1>  );
 };
 
-export default Home;
+export default HomePage;
