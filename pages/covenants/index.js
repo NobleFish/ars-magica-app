@@ -51,7 +51,7 @@ const Covenants = () => {
 
   return (
     <div className="text-center">
-      <h1 className="text-4xl">Covenants</h1>
+      <h1 className="text-4xl text-black-eerie">Covenants</h1>
       <Button onClick={createCovenant}>Create Covenant</Button>
       {isLoading && <p>Loading...</p>}
       {!isLoading && !covenants && <p>Covenants not found</p>}

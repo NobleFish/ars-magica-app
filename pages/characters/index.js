@@ -55,7 +55,7 @@ const Characters = () => {
 
   return (
     <div className="text-center">
-    <h1 className="text-4xl">Characters</h1>  
+    <h1 className="text-4xl text-black-eerie">Characters</h1>  
     <Button onClick={createCharacter}>Create Character</Button>
     {isLoading && <p>Loading...</p>}
     {!isLoading && !characters && <p>Characters not found</p>}
